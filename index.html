@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          placeholder="Stadt"
+          spellcheck="false"
+          class="searchBox"
+        />
+        <button class="searchBtn"><img src="search.png" /></button>
+      </div>
+      <div class="error">
+        <p>Stadt wird nicht gefunden !</p>
+      </div>
+      <div class="weather">
+        <img src="clear.png" alt="Wolken" class="weather-icon" />
+        <h2 class="city">Dortmund</h2>
+        <h1 class="temparature">12°c</h1>
+        <h2 class="weather-main"></h2>
+        <div class="column">
+          <i class="fa-solid fa-arrow-up-long i--style"></i>
+          <p class="temp-max">14°</p>
+          <i class="fa-solid fa-arrow-down-long i--style"></i>
+          <p class="temp-min">11°</p>
+        </div>
+        <div class="details">
+          <div class="row">
+            <div class="col">
+              <img src="humidity.png" alt="Luftfeuchtigkeit" />
+              <div>
+                <p>Luftfeuchtigkeit</p>
+                <p class="humidity">76%</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="wind.png" alt="Wind" />
+              <div>
+                <p>Wind</p>
+                <p class="wind">18 km/h</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="feelslike.png" alt="Gefuelt icon" class="gefuelt" />
+              <div>
+                <p>Gefühlt</p>
+                <p class="feels-like">12°c</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="cloudiness.png" alt="Volken icon" class="cloudiness" />
+              <div>
+                <p>Bewölkung</p>
+                <p class="clouds-all">0 %</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

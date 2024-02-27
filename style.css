@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(252, 218, 224);
+}
+.weather {
+  display: none;
+}
+.card {
+  height: 100%;
+  width: 90%;
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135grad, rgb(241, 143, 159), pink);
+  color: white;
+  margin: 30px auto 0;
+  border: 1px solid pink;
+  border-radius: 20px;
+  padding: 40px 35px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background-color: rgb(252, 218, 224);
+  padding: 10px 25px;
+  height: 50px;
+  border-radius: 30px;
+  flex: 1;
+  margin: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background-color: rgb(252, 218, 224);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.search button img {
+  height: 18px;
+  width: 15px;
+  object-fit: cover;
+}
+
+.weather-icon {
+  width: 170px;
+  margin: 0px;
+}
+
+.city {
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.weather-main {
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+.weather h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  margin-top: 55px;
+  gap: 55px;
+  margin-bottom: 20px;
+}
+.column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  gap: 5px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 5px;
+}
+.col img {
+  width: 45px;
+  padding-right: 8px;
+}
+.gefuelt {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg)
+    brightness(104%) contrast(101%);
+  padding-left: 8px;
+}
+
+.cloudiness {
+  filter: invert(70%) sepia(50%) saturate(0%) hue-rotate(135deg)
+    brightness(180%) contrast(200%);
+  padding-left: 8px;
+  width: 50px;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.humidity,
+.wind,
+.temp-min,
+.temp-max,
+.feels-like,
+.clouds-all {
+  font-size: 20px;
+}
+
+.temp-max {
+  margin-right: 5px;
+}
+.i--style {
+  font-size: 17px;
+  font-weight: 100;
+}
+.error {
+  font-size: 18px;
+  font-weight: 500;
+  display: none;
+}
